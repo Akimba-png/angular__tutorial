@@ -1,7 +1,25 @@
-<h2>Products</h2>
+<h2>Available Products</h2>
+<ul class="product-list">
+  <li
+    *ngFor="let product of products"
+    class="product-item"
+    (click)="log()"
+  >
+    <h3>Products {{product.name}}</h3>
+    <p *ngIf="product.description">{{product.description}}</p>
+    <p>is Favorite {{product.isFavorite}}</p>
+    <button
+      (click)="log()"
+      class="product-button"
+    >
+      click
+    </button>
+  </li>
+</ul>
 
 
-<!-- 
+
+<!--
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
 can be found in the LICENSE file at https://angular.io/license

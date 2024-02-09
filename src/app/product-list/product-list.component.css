@@ -1,5 +1,27 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.product-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 250px;
+  min-height: 300px;
+  box-shadow: 2px 2px 5px #808080;
+}
 
+.product-button {
+  margin-top: auto;
+  width: 50%;
+  text-align: center;
+  align-self: flex-end;
+}
 /*
 Copyright Google LLC. All Rights Reserved.
 Use of this source code is governed by an MIT-style license that
