@@ -6,7 +6,7 @@
     <p *ngIf="product && product.description">{{product.description}}</p>
     <p>is Favorite {{product && product.isFavorite}}</p>
     <button
-
+      (click)="changeFavoriteStatus.emit(product && product.id)"
       class="product-button"
     >
       click

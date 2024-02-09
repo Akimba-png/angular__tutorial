@@ -1,7 +1,11 @@
 <h2>Available Products</h2>
-<ul class="product-list">
+<ul
+  class="product-list">
   <app-product-item
-    *ngFor="let product of products" [product]="product"></app-product-item>
+    *ngFor="let product of products"
+    [product]="product"
+    (changeFavoriteStatus)="onChangeFavoriteStatus(product.id)"
+  ></app-product-item>
 </ul>
 
 

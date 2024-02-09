@@ -13,6 +13,16 @@ export class ProductListComponent {
   share() {
     window.alert('The product has been shared!');
   }
+
+  onChangeFavoriteStatus(id: number) {
+    this.products = this.products.map((product) => {
+      if (product.id === id) {
+        product.isFavorite = !product.isFavorite;
+        return product;
+      }
+      return product;
+    })
+  }
 }
 
 
