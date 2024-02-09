@@ -1,20 +1,7 @@
 <h2>Available Products</h2>
 <ul class="product-list">
-  <li
-    *ngFor="let product of products"
-    class="product-item"
-    (click)="log()"
-  >
-    <h3>Products {{product.name}}</h3>
-    <p *ngIf="product.description">{{product.description}}</p>
-    <p>is Favorite {{product.isFavorite}}</p>
-    <button
-      (click)="log()"
-      class="product-button"
-    >
-      click
-    </button>
-  </li>
+  <app-product-item
+    *ngFor="let product of products" [product]="product"></app-product-item>
 </ul>
 
 

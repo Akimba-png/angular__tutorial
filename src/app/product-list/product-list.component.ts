@@ -13,10 +13,6 @@ export class ProductListComponent {
   share() {
     window.alert('The product has been shared!');
   }
-
-  log() {
-    console.log('test');
-  }
 }
 
 

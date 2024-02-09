@@ -1,0 +1,14 @@
+<li
+    class="product-item"
+
+  >
+    <h3>Products {{product && product.name}}</h3>
+    <p *ngIf="product && product.description">{{product.description}}</p>
+    <p>is Favorite {{product && product.isFavorite}}</p>
+    <button
+
+      class="product-button"
+    >
+      click
+    </button>
+  </li>

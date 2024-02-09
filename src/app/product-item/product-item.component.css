@@ -1,0 +1,16 @@
+.product-item {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 250px;
+  min-height: 300px;
+  box-shadow: 2px 2px 5px #808080;
+}
+
+.product-button {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  width: 50%;
+  align-self: flex-end;
+}
