@@ -1,0 +1,14 @@
+.product-details {
+  min-width: 850px;
+}
+
+.product-title {
+  margin-bottom: 25px;
+}
+
+.product-card {
+  padding: 20px;
+  border: 2px solid #808080;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 0 #808080;
+}

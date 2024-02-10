@@ -2,9 +2,13 @@
     class="product-item"
 
   >
-    <h3>Products {{product && product.name}}</h3>
-    <p *ngIf="product && product.description">{{product.description}}</p>
-    <p>is Favorite {{product && product.isFavorite}}</p>
+    <a
+      [routerLink]="['/products', product && product.id]"
+    >
+      <h3>Products {{product && product.name}}</h3>
+      <p *ngIf="product && product.description">{{product.description}}</p>
+      <p>is Favorite {{product && product.isFavorite}}</p>
+    </a>
     <button
       (click)="changeFavoriteStatus.emit(product && product.id)"
       class="product-button"

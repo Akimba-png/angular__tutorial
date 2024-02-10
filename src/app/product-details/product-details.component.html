@@ -1,0 +1,8 @@
+<section class="product-details">
+  <h2 class="product-title">Product details</h2>
+  <div class="product-card" *ngIf="product">
+    <h3>{{product.name}}</h3>
+    <p>{{product.description}}</p>
+    <p>price is {{product.price | currency : 'RUB'}}</p>
+  </div>
+</section>
