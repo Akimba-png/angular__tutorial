@@ -1,0 +1,16 @@
+<section class="cart">
+  <h2 class="cart-title">Product Cart</h2>
+  <p>Your purchases go hear</p>
+  <ul
+    *ngIf="cartItems.length"
+    class="cart-list"
+  >
+    <li
+      *ngFor="let item of cartItems"
+      class="cart-item"
+    >
+      <h3>{{item.name}}</h3>
+      <strong>{{item.price}}</strong>
+    </li>
+  </ul>
+</section>
