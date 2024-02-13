@@ -1,17 +1,12 @@
-.cart {
+.shipping {
   min-width: 850px;
 }
 
-.cart-title {
+.shipping-title {
   margin-bottom: 25px;
 }
 
-.cart-link {
-  display: block;
-  margin-bottom: 15px;
-}
-
-.cart-list {
+.shipping-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -20,9 +15,9 @@
   list-style: none;
 }
 
-.cart-item {
+.shipping-item {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 20px;
   border: 2px solid #808080;
   border-radius: 10px;

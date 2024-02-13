@@ -1,0 +1,9 @@
+<section class="shipping">
+  <h2 class="shipping-title">shipping-prices</h2>
+  <ul class="shipping-list" *ngIf="prices">
+    <li class="shipping-item" *ngFor="let price of prices | async">
+      <p>{{price.type}}</p>
+      <p>{{price.price | currency: 'RUR '}}</p>
+    </li>
+  </ul>
+</section>

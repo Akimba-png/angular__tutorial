@@ -1,6 +1,12 @@
 <section class="cart">
   <h2 class="cart-title">Product Cart</h2>
   <p>Your purchases go hear</p>
+  <a
+    routerLink="/shipping"
+    class="cart-link"
+  >
+    Shipping prices
+  </a>
   <ul
     *ngIf="cartItems.length"
     class="cart-list"

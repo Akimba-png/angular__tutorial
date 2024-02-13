@@ -9,15 +9,19 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ProductCartComponent } from './product-cart/product-cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ShippingComponent } from './shipping/shipping.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
       { path: 'cart', component: ProductCartComponent },
+      { path: 'shipping', component: ShippingComponent },
     ]),
   ],
   declarations: [
@@ -27,6 +31,7 @@ import { ProductCartComponent } from './product-cart/product-cart.component';
     ProductItemComponent,
     ProductDetailsComponent,
     ProductCartComponent,
+    ShippingComponent,
   ],
   bootstrap: [
     AppComponent
